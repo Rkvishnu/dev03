@@ -20,7 +20,7 @@ terraform $ACTION --auto-approve
 if [ $ACTION == "apply" ]; then
 #login into the eks cluster
 aws eks update-kubeconfig --name $CLUSTER_NAME --region $REGION
-kubectl get pods -A
+ 
 
 #installing bitnami helm chart
 helm repo add bitnami https://charts.bitnami.com/bitnami
