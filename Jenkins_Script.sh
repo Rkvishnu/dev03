@@ -7,7 +7,7 @@ export TF_VAR_vpc_id=$VPC_ID
 export TF_VAR_cluster_name=$CLUSTER_NAME
 
 #goint to the terraform path
-cd ${WORKSPACE}/dev03/Terraform
+cd ${WORKSPACE}/Terraform
 
 #replacing the cluster name field in backend.tf file
 sed -i "s/ngg_cluster_name/$CLUSTER_NAME/g" backend.tf
